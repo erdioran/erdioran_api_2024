@@ -27,9 +27,9 @@ public abstract class BaseTest {
                 result.getTestClass().getName());
         String nodeName =
                 StringUtils.isNotBlank(result.getMethod().getDescription()) ? result.getMethod().getDescription() : method.getName();
-    //    ExtentTest node = ExtentTestManager.getTest().createNode(nodeName);
-      //  ExtentTestManager.setNode(node);
-        //ExtentTestManager.info("Test Started");
+        ExtentTest node = ExtentTestManager.getTest().createNode(nodeName);
+        ExtentTestManager.setNode(node);
+        ExtentTestManager.info("Test Started");
         String status = (String) context.getAttribute("previousTestStatus");
     }
 
