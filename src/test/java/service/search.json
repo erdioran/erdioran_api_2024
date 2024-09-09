@@ -1,0 +1,10 @@
+{
+  "memberId": "String",
+  "currentPage": "String",
+  "size": "String",
+  "keyword":"String",
+  "language": [
+    "String"
+  ],
+  "dontShowAppliedJobs":"String"
+}
